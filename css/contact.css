@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Padauk&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    width:100vw;
+    height:100vh;
+    font-family: 'Josefin Sans','Crimson Text', serif;
+    
+}
+
+
+footer{
+    position: absolute;
+    bottom:1vh ;
+    right: 15vw; 
+    text-align: center;
+    display:flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#about {
+    width:10vw;
+    height:10vw;
+    text-align:center;
+    font-size:25px;
+    /* transform:rotate(-90deg); */
+    background:transparent;
+    color:#fff;
+    position:fixed;
+    left:0;
+    bottom:20vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:0px 100px 100px 0px;
+}
+
+
+
+
+#about:hover {
+    background:rgba(50, 88, 255, 0.9);
+    cursor:pointer;
+    font-size:30px;
+    font-weight: bold;
+}
+
+#work {
+    width:10vw;
+    height:10vw;
+    text-align:center;
+    font-size:25px;
+    background:transparent;
+    color:#fff;
+    position:fixed;
+    bottom:0;
+    left:45vw;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:100px 100px 0px 0px;
+}
+
+#work:hover {
+    background:rgba(81, 50, 255, 0.9);
+    cursor:pointer;
+    font-size:30px;
+    font-weight: bold;
+}
+
+#home {
+    width:10vw;
+    height:10vw;
+    text-align:center;
+    font-size:25px;
+    /* transform:rotate(-90deg); */
+    background:transparent;
+    color:rgb(255, 255, 255);
+    position:fixed;
+    left:0;
+    bottom:50vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:0px 100px 100px 0px;
+}
+
+
+
+
+#home:hover {
+    background:rgba(50, 88, 255, 0.9);
+    cursor:pointer;
+    font-size:30px;
+    font-weight: bold;
+}
+
+#menu {
+    width:100%;
+    text-align:center;
+    margin:5vh 0px;
+    display:none;
+    
+    top: 4vh;
+    position: relative;
+    
+}
+
+#menu a {
+    margin:0px 6%;
+    font-size:19px;
+    color:rgb(255, 255, 255);
+    text-decoration:underline; 
+    z-index: 5;
+
+}
+
+
+@media (max-width: 800px){ 
+    #about {
+        display:none;
+    }
+    #home {
+        display:none;
+    }
+    #work {
+        display:none;
+    }
+    
+   
+    #menu {
+        display:inline-block;
+    }
+    
+
+}
+
+.contactpartmain{
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.contactpart{
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+
+}
+.cover-heading{
+    position:absolute;
+    top: 25vh;
+    font-family: 'Josefin Sans','Crimson Text', serif;
+    font-weight: bold;
+    color: blue;
+    text-decoration: 3px underline;
+    font-size: 20px;
+}
+
+.cover-heading p{
+    color: white;
+}
+
+.lead a{
+    background: transparent;
+    color: white;
+}
+.lead a:hover{
+    background: transparent;
+    color: rgb(25, 0, 255);
+}
+
+.formdirect{
+    z-index: 3;
+    position: absolute;
+
+}
+
+.formdirect{
+    border: 2px solid rgb(39, 32, 32);
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgba(7, 19, 85, 0.774);
+    max-width: 900px;
+    padding: 7px;
+    position: absolute;
+    right: 4vw;
+    bottom: 1vh;
+    font-family: 'Josefin Sans', sans-serif;
+
+    
+    
+}
+.formdirect p{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn_one{
+    font-size:15px;
+    font-family: 'Josefin Sans', sans-serif;
+    color:white;
+    background-color: rgb(13, 13, 184);
+    
+    border:2px solid rgba(16, 3, 88, 0.774);
+    padding:8px 40px;
+    border-radius: 10px 10px;
+    font-weight:bold;
+    margin:5vh 2px auto 0;
+    transition:0.4s ease-in-out;
+    position: relative;
+    bottom: 0%;
+    font-family: 'Padauk', sans-serif;
+}
+.btn_one:hover {
+    cursor:pointer;
+    color:blue;
+    background:transparent;
+    border: 2px solid rgb(4, 0, 243);
+    font-family: 'Padauk', sans-serif;
+}
+
+input{
+    background-color:rgba(7, 19, 85, 0.774);
+    border: 2px solid rgba(236, 236, 236, 0.842);
+    border-top: 0px;
+    border-left: 0px;
+
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    color:white;
+    margin: 2px;
+    padding: 4px;
+    
+}
+
+textarea{
+    background-color:rgba(7, 19, 85, 0.774);
+    border: 2px solid rgba(236, 236, 236, 0.842);
+    border-top: 0px;
+    border-left: 0px;
+
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    color:white;
+    margin: 2px;
+    padding: 4px;
+}

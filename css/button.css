@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Padauk&display=swap');
+
+#resume{
+    font-size:25px;
+    font-family: 'Josefin Sans', sans-serif;
+    color:blue;
+    background:transparent;
+    border:2px solid rgb(38, 0, 255);
+    padding:8px 40px;
+    border-radius: 10px 10px;
+    font-weight:bold;
+    margin:5vh 2px auto 0;
+    transition:0.4s ease-in-out;
+    position: relative;
+    bottom: 0%;
+    font-family: 'Padauk', sans-serif;
+
+}
+
+#resume:hover {
+    cursor:pointer;
+    color:white;
+    background-color: rgb(13, 13, 184);
+    border: 3px solid rgb(23, 22, 112);
+    font-family: 'Padauk', sans-serif;
+    
+}
+
+.btn_one{
+  font-size:15px;
+  font-family: 'Josefin Sans', sans-serif;
+  color:white;
+  background-color: rgb(13, 13, 184);
+  
+  border:2px solid rgba(16, 3, 88, 0.774);
+  padding:8px 40px;
+  border-radius: 10px 10px;
+  font-weight:bold;
+  margin:5vh 2px auto 0;
+  transition:0.4s ease-in-out;
+  position: relative;
+  bottom: 0%;
+  font-family: 'Padauk', sans-serif;
+}
+.btn_one:hover {
+  cursor:pointer;
+  color:blue;
+  background:transparent;
+  border: 2px solid rgb(4, 0, 243);
+  font-family: 'Padauk', sans-serif;
+}

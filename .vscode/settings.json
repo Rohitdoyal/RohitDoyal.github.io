@@ -1,0 +1,6 @@
+{
+    "django.showContributeNotification": false,
+    "django.snippets.use": false,
+    "django.i18n": false,
+    "emmet.includeLanguages": {"django-html": "html"}
+}

@@ -1,0 +1,70 @@
+
+.logonamepera{
+    text-shadow:  2px 2px rgb(4, 218, 247);
+    font-size: 50px;
+    color: #1100ff;
+    font-weight: bold;
+} 
+
+@keyframes rd {
+    0%{
+        top: 3vh;
+       
+    }
+    50%{
+        
+    }
+    100%{
+        top: 13.5vh;
+       
+    }
+
+}
+
+.logo-name{
+    background-color: rgb(0, 0, 0);
+    
+    width: 90px;
+    height:70px;
+    border-radius: 60px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(0, 225, 255);
+    border-top: 0.5px solid rgb(0, 225, 255) ;
+    border-bottom: 5px solid rgb(0, 225, 255)  ;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    animation-name: rd;
+    animation-duration:2s ;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    position: absolute;
+    right:5vw;
+   
+}
+
+.logo-plane{
+    position: absolute; 
+    right:3vw; 
+    height: 200px;
+    width: 200px;
+    background:#0d22db00 ;
+     transform: rotate3d(54,-27,33,93deg); 
+    top: 10vh;
+    box-shadow: 153px 100px 100px rgb(151, 148, 202);
+    /* animation: planeanimation 200 normal  5 ; */
+} 
+
+.logo-planecontact{
+    position: relative; 
+    height: 150px;
+    width: 150px;
+    background:#0d22db00 ;
+    transform: rotate3d(54,-27,33,93deg); 
+    box-shadow: 153px 100px 100px rgb(151, 148, 202);
+    border-radius: 10px;
+    /* animation: planeanimation 200 normal  5 ; */
+} 
+

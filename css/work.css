@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Padauk&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: 'Josefin Sans','Crimson Text', serif;
+    color: rgb(255, 255, 255);
+}
+
+footer{
+    position: fixed;
+    bottom:0px ;
+    right: 5px; 
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#contact  {
+    width:20vw;
+    height:8vh;
+    text-align:center;
+    font-size:25px;
+    background:rgba(53, 50, 255, 0.9);
+    color:#fff;
+    position:fixed;
+    top: 1vh;
+    left: 60vw;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:25px;
+    
+}
+#contact:hover {
+    background:rgb(0, 195, 255);
+    cursor:pointer;
+    color:rgba(53, 50, 255, 0.9);
+    
+    font-weight: bold;
+}
+
+#home  {
+
+    width:20vw;
+    height:8vh;
+    text-align:center;
+    font-size:25px;
+    background:rgba(53, 50, 255, 0.9);
+    color:#fff;
+    position:fixed;
+    top: 1vh;
+    left: 35vw;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:25px;
+}
+#home:hover {
+    background:rgb(0, 195, 255);
+    cursor:pointer;
+    color:rgba(53, 50, 255, 0.9);
+    font-weight: bold;
+}
+
+#about  {
+    width:20vw;
+    height:8vh;
+    text-align:center;
+    font-size:25px;
+    background:rgba(53, 50, 255, 0.9);
+    color:#fff;
+    position:fixed;
+    top: 1vh;
+    left: 10vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:25px;
+
+}
+#about:hover {
+    background:rgb(0, 195, 255);
+    cursor:pointer;
+    color:rgba(53, 50, 255, 0.9);
+    font-weight: bold;
+}
+
+#menu {
+    width:100%;
+    text-align:center;
+    margin:6vh 0px;
+    display:none;
+    position:absolute;
+    top: 5vh;
+    
+}
+
+#menu a {
+    margin:0px 6%;
+    font-size:19px;
+    color:rgb(255, 255, 255);
+    text-decoration:underline; 
+}
+
+
+#usedtool div {
+    color: honeydew;
+    border: 2px solid rgb(255, 255, 255);
+    display:inline-block;
+    font-size: medium;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.container {
+    background-color: transparent;
+    width: 70vw;
+    margin: auto;
+    position: relative;
+    margin-top: 20vh;
+    border-radius: 20px;
+    box-shadow: 8px 5px 3px 1px rgba(87, 149, 230, 0.616);
+    
+    
+}
+.container h1{
+    text-align: center;
+    text-decoration: 4px underline;
+    text-decoration-color: blue;
+    font-size: 35px;
+    margin: 2px;
+}
+
+
+.container .projectcard{
+    border: 2px solid rgba(32, 22, 180, 0.315);
+    padding: 5px;
+    margin: 15px;
+    border-radius: 10px ;
+    background-color: rgba(32, 22, 180, 0.315);
+    box-shadow: 5px 5px 3px 1px rgba(255, 255, 255, 0.39);
+    
+
+}
+
+.container .projectcard .projectphoto h2{
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 800px){ 
+    #contact {
+        display:none;
+    }
+    #home {
+        display:none;
+    }
+    #about {
+        display:none;
+    }
+    
+   
+    #menu {
+        display:inline-block;
+    }
+    
+    
+
+}
+
