@@ -1,24 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Padauk&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
 
-*{
+body{
     margin: 0;
     padding: 0;
-}
-body{
-    background-color: black;
-    font-family: 'Josefin Sans','Crimson Text', serif;
-    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    
+    font-family: consolas;
 }
 
-footer{
-    position: fixed;
-    bottom:0px ;
-    right: 5px; 
-   
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
+
 
 #contact  {
     width:8vw;
@@ -116,84 +108,237 @@ footer{
     text-decoration:underline; 
 }
 
-.info{
-    display: inline-flex;
-    justify-content: center;
-   
-    background-color: rgba(13, 11, 131, 0.685);
-    position: relative;
-    top: 18vh;
-    font-family: 'Josefin Sans','Crimson Text', serif;
-    border-radius: 0px 100px 100px 0px;
-    right: 20vw;
-    padding-left: 10px;
-    left: 4px;
 
-
-
-}
-
-
-img{
-    width: 150px;
-    border: 5px solid rgb(2, 9, 44);
-    border-radius: 100px;
-}
-
-.textinfo h2{ 
-    text-align: center;
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color: rgb(255, 255, 255);
-    margin-bottom: 5px;
-}
 
 .container{
-    border: 5px solid rgba(0, 10, 41, 0.712);
-    position: relative;
-    top:20vh;
-    width: 70vw;
+    
+    background-color: transparent;
+    width: 80vw;
     margin: auto;
-    background-color:  rgba(25, 23, 168, 0.24);
-    box-shadow: 2px 5px 3px 1px rgba(255, 255, 255, 0.616);
-    
+    position: relative;
+    margin-top: 30vh;
+    border-radius: 20px;
+    box-shadow: 0px 4px 5px 5px rgba(54, 63, 194, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
+
+.twocards{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px auto;
+    max-width: 1040px;
+    box-sizing: content-box;
+    position: relative;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    
+    align-items: center;
+}
+
+.container h1{
+    color: white;
+    text-align: center;
+    text-decoration: 4px underline;
+    text-decoration-color: rgb(141, 141, 255);
+    font-size: 45px;
+    margin: 2px;
+}
+
 .container .card{
-    border: 2px solid rgba(68, 0, 255, 0.541);
-    margin-top: 10px;
-    border-radius: 25px ;
-    box-shadow: 2px 2px 1px 1px rgba(123, 169, 230, 0.493);
-    
-
+    position: relative;
+    cursor: pointer;
+    margin: auto 2vw auto 2vw;
 }
 
-.container .card .icon{
-    background-color: rgba(0, 140, 255, 0.616);
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
 
+.container .card .face.face1{
+    position: relative;
+    background: rgb(0, 0, 0);
+    display: flex;
     justify-content: center;
     align-items: center;
-    border-radius:70px 25px ;
-
-    
+    z-index: 1;
+    transform: translateY(100px);
+    color: white;
 }
-.container .card .icon h4{
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: underline;
+
+.container .card:hover .face.face1{
+    background: #18a3ff;
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+    max-width: 100px;
+}
+
+.container .twocards .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
     text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    box-shadow: 0px 10px 20px 5px rgba(185, 186, 255, 0.5);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.skillname{
+    display:flexbox;
+    flex-direction: column;
+    border: 2px solid red;
 }
 
 
 
-.container .card .icon img{
-    background-color: rgba(1, 0, 8, 0.616);
+.container .card .face.face2 .content i{
+   
+    
+    margin:5px ;
+}
+
+
+
+
+
+@media (max-width: 800px){ 
+    .container{
+        width: 90%;
+        box-shadow: 5px 5px 3px 1px rgba(3, 118, 250, 0.39);
+    }
+    .container h1{
+        font-size: 35px;
+    }
+    .twocards{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px auto;
+        max-width: 1040px;
+        box-sizing: content-box;
+        position: relative;
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr;
+    
+        width: 90%;
+        
+    }
 
     
+
+    
+    .container .card .face.face1{
+        transform: translateY(0);
+        margin-top: 5vh ;
+        opacity: 1;
+    }
+    
+    .container .card .face.face1 .content{
+        opacity: 0.9;
+        transition: 0.5s;
+    }
+
+    .container .card .face.face2{
+        transform: translateY(0);
+        background-color:aqua;
+    }
+    
+ 
 }
-.container .card .tools img{
-    width: 50px;
-    background-color: white;
+
+.aboutbreak{
+    width: 50%;
+    
+    height: 5px;
+    background: linear-gradient(270deg, rgb(39, 132, 255) 0%, rgb(204, 0, 255) 100%);
+        
+
 }
+
+.aboutme h2{
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(140, 0, 255);
+}
+.aboutme{
+    position: relative;
+    color: white;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid #5ea4ff80;
+    font-family:  Space Grotesk, sans-serif;
+    box-shadow: 5px 5px 3px 1px rgba(7, 3, 250, 0.575);
+    border-radius: 10px;
+
+}
+.info{
+    background-color: rgb(0, 0, 0);
+   
+    display: inline-flex;
+    flex-direction: row;
+
+}
+.info .textinfo{
+    border: rgb(0, 0, 0);
+    
+    display: flexbox;
+    flex-direction: column;
+    width: 60%;
+
+}
+
+.info span img{
+    display: inline;
+    width: 200px;
+    
+}
+
+@media (max-width: 800px){
+    .info{
+        background-color: rgb(0, 0, 0);
+        
+        display: block;
+    
+    }
+    .info .textinfo{
+        width: 90%;
+        display: block;
+    }
+}
+
 
 @media (max-width: 800px){ 
     #contact {

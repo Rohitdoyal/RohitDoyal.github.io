@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Padauk&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -165,6 +166,7 @@ footer{
     width: 100vw;
     height: 100vh;
     
+    
 
 }
 .cover-heading{
@@ -188,6 +190,7 @@ footer{
 .lead a:hover{
     background: transparent;
     color: rgb(25, 0, 255);
+ 
 }
 
 .formdirect{
@@ -203,7 +206,6 @@ footer{
     max-width: 900px;
     padding: 7px;
     position: fixed;
-    overflow: hidden;
     right: 4vw;
     bottom: 1vh;
     font-family: 'Josefin Sans', sans-serif;
@@ -223,7 +225,6 @@ footer{
     font-family: 'Josefin Sans', sans-serif;
     color:white;
     background-color: rgb(13, 13, 184);
-    
     border:2px solid rgba(16, 3, 88, 0.774);
     padding:8px 40px;
     border-radius: 10px 10px;
@@ -233,6 +234,7 @@ footer{
     position: relative;
     bottom: 0%;
     font-family: 'Padauk', sans-serif;
+
 }
 .btn_one:hover {
     cursor:pointer;
