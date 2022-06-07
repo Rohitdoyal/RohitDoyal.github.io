@@ -259,7 +259,7 @@ body{
 
     
     .container .card .face.face1{
-        transform: translateY(0);
+       
         margin-top: 5vh ;
         opacity: 1;
     }
@@ -270,7 +270,7 @@ body{
     }
 
     .container .card .face.face2{
-        transform: translateY(0);
+       
         background-color:aqua;
     }
     
