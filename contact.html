@@ -44,7 +44,7 @@
         <div class="contactpartmain">
 
             <div class="cover-heading">
-                <h1>Contact Me :)</h1><br>
+                <h1>Contact Me</h1><br>
                 <p>Mobile No. 6377965980 </p>
             </div>
 
@@ -52,38 +52,68 @@
 
                 <p class="lead" style="padding: 7px 0px 0px 0px"></p>
                 <p class="lead" style="padding-right: 10px">
-                    <a href="mailto:rohit.2@iitj.ac.in" style="padding-right: 20px"><i
+                    <a href="mailto:rohitdoyal172001@gmail.com" style="padding-right: 20px"><i
                             class="fas fa-envelope fa-2x"></i></a>
                     <a href="https://github.com/Rohitdoyal" style="padding-right: 20px"><i
                             class="fab fa-github fa-2x"></i></a>
-                    <a href="https://www.linkedin.com/in/rohit-doyal-407b33197" style="padding-right: 20px"><i
-                            class="fab fa-linkedin-in fa-2x"></i></a>
-                    <a href="https://www.facebook.com/rohit.doyal.9" style="padding-right: 20px"><i
-                            class="fab fa-facebook fa-2x"></i></a>
-                    <a href="https://www.instagram.com/rohitdoyal1.0/" style="padding-right: 20px"><i
-                            class="fab fa-instagram fa-2x"></i></a>
-                    <a href="https://twitter.com/DoyalRohit"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/rohit-doyal-407b33197" style="padding-right: 20px">
+                        <i class="fab fa-linkedin-in fa-2x"></i></a>
+                            
+                    <a href="https://twitter.com/DoyalRohit"  style="padding-right: 20px"><i class="fab fa-twitter fa-2x" ></i></a>
+                    <a href="https://medium.com/@rohitdoyal172001">
+                        <i class="fab fa-medium fa-2x"></i>
+                    </a>
                 </p>
             </div>
         </div>
 
-        <div class="formdirect">
-            <p>Contact me</p>
-            <form action="https://formspree.io/f/mqkwbwao" method="POST">
-                <input type="text" placeholder="name" name="name" required>
-                <input type="email" placeholder="email" name="_replyto" required><br>
-                <textarea placeholder="your message" required rows="1" name="message" required></textarea><br>
-
-                <!-- your other form fields go here -->
-
-                <button type="submit" class="btn_one">Send</button>
-            </form>
-        </div>
+      
 
     </main>
 
     <footer><span>Designed with <i class="fas fa-heart"></i> by Rohit .</span> </footer>
-
+<!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/mdknanoe",
+    title: "Contact me",
+    fields: [
+    { 
+        type: "text", 
+        label: "Name:", 
+        name: "name",
+        required: true,
+        placeholder: "name"
+      },
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "blue"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
 
 </body>
 

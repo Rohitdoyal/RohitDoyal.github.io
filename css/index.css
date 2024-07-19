@@ -112,17 +112,24 @@ body{
 }
 
 
+
 #about:hover {
     background:rgba(50, 88, 255, 0.9);
     cursor:pointer;
+    font-size:30px;
+    font-weight: bold;
 }
 #work:hover {
-    background:rgba(81, 50, 255, 0.9);
+    background:rgba(50, 88, 255, 0.9);
     cursor:pointer;
+    font-size:30px;
+    font-weight: bold;
 }
 #contact:hover {
-    background:rgba(53, 50, 255, 0.9);
+    background:rgba(50, 88, 255, 0.9);
     cursor:pointer;
+    font-size:30px;
+    font-weight: bold;
 }
 
 #menu {

@@ -33,7 +33,6 @@ footer{
     height:10vw;
     text-align:center;
     font-size:25px;
-    /* transform:rotate(-90deg); */
     background:transparent;
     color:#fff;
     position:fixed;
@@ -76,7 +75,7 @@ footer{
 }
 
 #work:hover {
-    background:rgba(81, 50, 255, 0.9);
+    background:rgba(50, 88, 255, 0.9);
     cursor:pointer;
     font-size:30px;
     font-weight: bold;
@@ -174,8 +173,8 @@ footer{
     top: 25vh;
     font-family: 'Josefin Sans','Crimson Text', serif;
     font-weight: bold;
-    color: blue;
-    text-decoration: 3px underline;
+  
+
     font-size: 20px;
 }
 
@@ -189,7 +188,11 @@ footer{
 }
 .lead a:hover{
     background: transparent;
-    color: rgb(25, 0, 255);
+
+    /* color: rgb(25, 0, 255); */
+    font-size: 20px;
+    
+    
  
 }
 

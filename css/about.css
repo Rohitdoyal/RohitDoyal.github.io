@@ -13,11 +13,11 @@ body{
 
 
 #contact  {
-    width:8vw;
-    height:10vw;
+    width:10vw;
+    height:8vw;
     text-align:center;
     font-size:25px;
-    transform:rotate(90deg);
+    /* transform:rotate(90deg); */
     background:rgba(53, 50, 255, 0.9);
     color:#fff;
     position:fixed;
@@ -25,26 +25,26 @@ body{
     bottom:20vh;
     display:flex;
     flex-direction: column;
-    justify-content:center;
+    top:52.5vh;
+    justify-content: center;
     z-index:4;
     transition:0.4s ease-in-out;
-    border-radius:0px 0px 100px 100px;
-    top:52.5vh;
+    border-radius:100px 0px 0px 100px;
+    
 }
 #contact:hover {
-    background:rgb(0, 195, 255);
+    background:rgba(50, 88, 255, 0.9);
     cursor:pointer;
-    color:rgba(53, 50, 255, 0.9);
-    
+    font-size:30px;
     font-weight: bold;
 }
 
 #home  {
-    width:8vw;
-    height:10vw;
+    width:10vw;
+    height:8vw;
     text-align:center;
     font-size:25px;
-    transform:rotate(90deg);
+    /* transform:rotate(90deg); */
     background:rgba(53, 50, 255, 0.9);
     color:#fff;
     position:fixed;
@@ -56,21 +56,21 @@ body{
     justify-content: center;
     z-index:4;
     transition:0.4s ease-in-out;
-    border-radius:0px 0px 100px 100px;
+    border-radius:100px 0px 0px 100px;
 }
 #home:hover {
-    background:rgb(0, 195, 255);
+    background:rgba(50, 88, 255, 0.9);
     cursor:pointer;
-    color:rgba(53, 50, 255, 0.9);
+    font-size:30px;
     font-weight: bold;
 }
 
 #work  {
-    width:8vw;
-    height:10vw;
+    width:10vw;
+    height:8vw;
     text-align:center;
     font-size:25px;
-    transform:rotate(90deg);
+    /* transform:rotate(90deg); */
     background:rgba(53, 50, 255, 0.9);
     color:#fff;
     position:fixed;
@@ -82,13 +82,17 @@ body{
     justify-content: center;
     z-index:4;
     transition:0.4s ease-in-out;
-    border-radius:0px 0px 100px 100px;
+    border-radius:100px 0px 0px 100px;
 }
+
+
 #work:hover {
-    background:rgb(0, 195, 255);
+    background:rgba(50, 88, 255, 0.9);
     cursor:pointer;
-    color:rgba(53, 50, 255, 0.9);
+    font-size:30px;
     font-weight: bold;
+
+ 
 }
 
 #menu {
@@ -110,8 +114,7 @@ body{
 
 
 
-.container{
-    
+.container{   
     background-color: transparent;
     width: 80vw;
     margin: auto;
@@ -177,7 +180,7 @@ body{
 }
 
 .container .card .face.face1 .content{
-    opacity: 0.7;
+    opacity: 1;
     transition: 0.5s;
 }
 
