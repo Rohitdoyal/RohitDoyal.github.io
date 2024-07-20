@@ -1,0 +1,6 @@
+ • Trained an ensemble of pseudo models and deployed it on a website to find top
+ similar images and evaluated its performance using MAP score.
+ • Trained a CNN model with 5 parallellast fully connected layer seach acting as a
+ classifier on classes 16 to 25 on CIFAR100 dataset and used euclidean distance
+ between output of the lastlayer for test image and images from data set to get
+ similarity score. Deployed this model using flask on localhost
